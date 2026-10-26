@@ -13,7 +13,8 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |vb|
     vb.name = "lab-web"
     vb.memory = 1024
-    vb.cpus = 2
+    # 1 procesor - z 2 maszyna u mnie zawieszala sie przy starcie
+    vb.cpus = 1
   end
 
   # wykonuje sie raz, przy pierwszym vagrant up

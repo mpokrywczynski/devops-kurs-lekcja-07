@@ -6,12 +6,16 @@ Maszyna z serwerem WWW opisana jednym plikiem `Vagrantfile`.
 
 - obraz: `bento/ubuntu-24.04`
 - nazwa hosta: `lab-web`
-- pamiec: 1 GB, 2 procesory
+- pamiec: 1 GB, 1 procesor
 - siec prywatna: `192.168.56.10`
 - port: `127.0.0.1:8081` na moim komputerze -> port 80 w maszynie
 - provision: instaluje nginx i wstawia strone z moim imieniem
 
 Port 8081 zamiast 8080, bo u mnie 8080 jest zajety przez Apache.
+
+1 procesor zamiast 2, bo z 2 maszyna kilka razy zawiesila sie przy starcie
+(`Begin: Loading essential drivers`). U mnie VirtualBox dziala przez Hyper-V
+(mam WSL2). Pomiary w tabeli nizej byly robione jeszcze z 2 procesorami.
 
 ## Srodowisko
 
